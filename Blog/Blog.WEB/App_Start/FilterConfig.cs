@@ -8,9 +8,14 @@ namespace Blog.WEB
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filter)
         {
+<<<<<<< HEAD
             filter.Add(new HandleErrorAttribute());
             
 
+=======
+            filters.Add(new HandleErrorAttribute());
+            //Something here
+>>>>>>> master
         }
     }
 }
