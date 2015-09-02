@@ -1,0 +1,15 @@
+﻿@using Blog.WEB.Models
+@model IEnumerable<Blog.WEB.Models.ArticleViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@section body
+{
+    @if (User.Identity.Name == "Admin") { <div>@Html.ActionLink("+", "Create", "Home", new { @class = "addArticleButton"})</div> }
+    <div id="articles">
+        @Html.Partial("_articleList", Model)
+    </div>
+    <img id="ajax-loader-gif" src="@Url.Content("~/Images/ajax-loader.gif")" />
+}

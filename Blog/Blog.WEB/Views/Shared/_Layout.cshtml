@@ -1,0 +1,45 @@
+﻿@using System.Web.UI.WebControls
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div></div>
+        <h3>FOLLOWIN</h3>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("HOME", "Index", "Home")</li>
+                <li>@Html.ActionLink("FEEDBACK", "Index", "Feedback")</li>
+                <li>@Html.ActionLink("PEOPLE", "Index", "Person")</li>
+            </ul>
+        </nav>
+        <h2>Followin's blog</h2>
+        <div class="login">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <span>Hello, @User.Identity.Name :)</span>
+                @Html.ActionLink("Logout", "Logout","Account")
+            }
+            else
+            {
+                @Html.ActionLink("Login", "Login", "Account",  new {returnUrl = Request.Url}, null) 
+                @Html.ActionLink("Register", "Register", "Account")
+
+            }
+        </div>
+    </header>
+    <div id="main">
+        @RenderSection("body")
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/scripts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

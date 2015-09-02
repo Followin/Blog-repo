@@ -1,0 +1,13 @@
+﻿@using Blog.WEB.Models
+@model Blog.WEB.Models.ArticleViewModel
+
+
+   
+
+    <h3>What do you think about it?</h3>
+    <div id="submitComment">
+        @Html.Partial("_submitComment", new CommentViewModel { ArticleId = Model.Id })
+    </div>
+    <div id="@String.Concat("commentsList", @Model.Id)">
+        @Html.Action("CommentsListPart", "Home", new { articleId = Model.Id })
+    </div>

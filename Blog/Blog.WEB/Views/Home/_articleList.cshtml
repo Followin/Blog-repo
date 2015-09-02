@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Blog.WEB.Models.ArticleViewModel>
+           
+@foreach (var article in Model)
+{
+    <div class="paper-block article">
+        <h3>@article.Theme</h3>
+        <div class="mark">
+            <button class="minus">-</button>
+            <div class="markNum">@article.Mark</div>
+            <button class="plus">+</button>
+        </div>
+        <p class="textPreview">@article.Text</p>
+        <div class="credentials">@article.Author - @article.DateTime.ToString()</div>
+        @if (User.Identity.Name == "Admin") { <div>@Html.ActionLink("Edit", "Edit", "Home", new { id = article.Id }, new { @class = "edit-link" })</div> }
+        <div class="commentsBlock">
+        </div>
+        <input type="hidden" value="@article.Id" name="articleId" />
+    </div>
+}
+

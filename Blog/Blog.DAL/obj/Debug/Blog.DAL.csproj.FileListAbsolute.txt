@@ -1,0 +1,20 @@
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll.config
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\bin\Debug\Blog.DAL.pdb
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\obj\Debug\Blog.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\obj\Debug\Blog.DAL.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.DAL\obj\Debug\Blog.DAL.pdb
+C:\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll.config
+C:\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll
+C:\Blog\Blog.DAL\bin\Debug\Blog.DAL.pdb
+C:\Blog\Blog.DAL\bin\Debug\EntityFramework.dll
+C:\Blog\Blog.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Blog\Blog.DAL\bin\Debug\EntityFramework.xml
+C:\Blog\Blog.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Blog\Blog.DAL\obj\Debug\Blog.DAL.csprojResolveAssemblyReference.cache
+C:\Blog\Blog.DAL\obj\Debug\Blog.DAL.dll
+C:\Blog\Blog.DAL\obj\Debug\Blog.DAL.pdb

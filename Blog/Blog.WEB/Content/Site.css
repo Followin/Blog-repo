@@ -1,0 +1,312 @@
+﻿/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: .85em;
+    font-family: /*Roboto,*/ sans-serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+
+header, footer, nav, section {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    width: 100%;
+    min-height: 250px;
+    background: #00CBFE;
+    margin-bottom: -50px;
+    z-index: 0;
+    padding: 20px 30px;
+    color: #fff;
+    -webkit-transition: min-height .2s ease-out;
+    -moz-transition: min-height .2s ease-out;
+    -ms-transition: min-height .2s ease-out;
+    -o-transition: min-height .2s ease-out;
+    transition: min-height .2s ease-out;
+}
+
+header h2 {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    font-size: 3em;
+}
+
+.header-mini {
+    position: fixed;
+    top: 0;
+    margin-bottom: 0;
+    min-height: 0;
+    z-index: 100;
+}
+
+header h3 {
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: central;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+
+#main {
+    padding-bottom: 10px;
+}
+
+.paper-block {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+
+    padding: 10px 10px 10px 15px;
+
+    min-height: 300px;
+    width: 60%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 1;
+
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.article {
+    padding: 10px 15px;
+    -webkit-transition: all 0.5s ease-out,
+        top 0.5s ease;
+    -moz-transition: all 0.5s ease-out,
+        top 0.5s ease;
+    -ms-transition: all 0.5s ease-out,
+        top 0.5s ease;
+    -o-transition: all 0.5s ease-out,
+        top 0.5s ease;
+    transition: all 0.5s ease-out,
+        top 0.5s ease;
+    padding-bottom: 30px;
+}
+
+.big-article {
+    position: relative;
+    z-index: 1000;
+    width: 90%;
+
+}
+
+.article h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.article > p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+.article > div.credentials {
+    font-style: italic;
+    position: absolute;
+    bottom: 10px;
+}
+
+.article .commentsBlock {
+    display: none;
+}
+
+.article .commentsBlock h3 {
+    color: #00cbfe
+}
+
+
+
+
+
+
+
+
+
+
+
+#submitComment {
+    margin-bottom: 20px;
+}
+
+.addArticleButton {
+    text-decoration: none;
+    background: greenyellow;
+    position: fixed;
+    display: block;
+
+    height: 50px;
+    width: 50px;
+    top: 260px;
+    right: 100px;
+
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+
+    -ms-border-radius: 35px;
+    border-radius: 35px;
+    text-align: center;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    -webkit-transition: top .3s ease-out;
+    -moz-transition: top .3s ease-out;
+    -ms-transition: top .3s ease-out;
+    -o-transition: top .3s ease-out;
+    transition: top .3s ease-out
+}
+
+
+#ajax-loader-gif {
+    margin: 20px auto;
+    display: none;
+}
+
+.pageLinks {
+    margin-top: 10px;
+}
+.pageLinks a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #00cbfe;
+}
+
+.pageLinks a.selected {
+    
+    text-decoration: underline;
+}
+
+.mark {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+}
+
+.mark > button, .mark > .markNum {
+    float: left;
+}
+
+.mark > button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.mark > button.plus {
+    color: #4bf26b;
+    line-height: 1.2em;
+    padding-left: 10px;
+}
+
+.mark > button.minus {
+    color: red;
+}
+
+.mark > .markNum {
+    font-size: 2.5em;
+    line-height: 2em;
+}
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+
+.comment {
+    margin: 15px 0;
+}
+
+.comment p {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    min-height: 40px;
+    padding: 5px 5px;
+
+}
+
+.comment .credentials {
+    color: black;
+    padding-left: 5px;
+}
+
+.login {
+    float: right;
+    margin-right: 100px;
+}
+
+.login a, .login span {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right: 20px;
+}

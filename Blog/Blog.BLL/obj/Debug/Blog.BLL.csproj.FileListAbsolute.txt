@@ -1,0 +1,30 @@
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\Blog.BLL.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\Blog.BLL.pdb
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\AutoMapper.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\Blog.DAL.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\Ninject.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\Blog.DAL.pdb
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\AutoMapper.xml
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\Ninject.xml
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\obj\Debug\Blog.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\obj\Debug\Blog.BLL.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\obj\Debug\Blog.BLL.pdb
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\System.Web.Helpers.dll
+C:\Users\Jonh\Documents\Visual Studio 2013\Projects\Blog\Blog.BLL\bin\Debug\System.Web.Helpers.xml
+C:\Blog\Blog.BLL\bin\Debug\Blog.BLL.dll
+C:\Blog\Blog.BLL\bin\Debug\Blog.BLL.pdb
+C:\Blog\Blog.BLL\bin\Debug\AutoMapper.dll
+C:\Blog\Blog.BLL\bin\Debug\Blog.DAL.dll
+C:\Blog\Blog.BLL\bin\Debug\Ninject.dll
+C:\Blog\Blog.BLL\bin\Debug\System.Web.Helpers.dll
+C:\Blog\Blog.BLL\bin\Debug\EntityFramework.dll
+C:\Blog\Blog.BLL\bin\Debug\Blog.DAL.pdb
+C:\Blog\Blog.BLL\bin\Debug\AutoMapper.xml
+C:\Blog\Blog.BLL\bin\Debug\Ninject.xml
+C:\Blog\Blog.BLL\bin\Debug\System.Web.Helpers.xml
+C:\Blog\Blog.BLL\bin\Debug\EntityFramework.xml
+C:\Blog\Blog.BLL\obj\Debug\Blog.BLL.csprojResolveAssemblyReference.cache
+C:\Blog\Blog.BLL\obj\Debug\Blog.BLL.dll
+C:\Blog\Blog.BLL\obj\Debug\Blog.BLL.pdb

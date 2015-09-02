@@ -1,0 +1,22 @@
+﻿@model Blog.WEB.Models.CommentViewModel
+
+@using (Ajax.BeginForm("SubmitComment", "Home", new AjaxOptions
+{
+    HttpMethod = "POST",
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "commentsList" + Model.ArticleId,
+}))
+{
+    
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Text)
+        @Html.EditorFor(x => x.Text)
+        @Html.ValidationMessageFor(x => x.Text)
+    </div>
+
+    <input name="ArticleId" type="hidden" value="@Model.ArticleId" />
+
+    <input type="submit" value="Say" />
+
+}

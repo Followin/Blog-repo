@@ -1,0 +1,33 @@
+﻿@using Blog.WEB.HtmlHerpers
+@model Blog.WEB.Models.CommentsListViewModel
+
+
+    @foreach (var comment in Model.Comments)
+    {
+        <div class="comment">
+            <p>@comment.Text</p>
+            <div class="credentials"><span class="author"></span>@comment.User.Nickname</div>
+        </div>
+    }
+
+    @if (Model.Info.TotalPages > 1)
+    {
+        <div class="pageLinks">
+            @Html.PageLinks(Model.Info, x => x == Model.Info.CurrentPage
+            ? Ajax.ActionLink(x.ToString(),
+            "CommentsListPart", new {page = x, articleId = Model.ArticleId}, new AjaxOptions
+            {
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "commentsList" + @Model.ArticleId,
+            HttpMethod = "GET"
+            }, new {@class = "selected"})
+
+            : Ajax.ActionLink(x.ToString(),
+            "CommentsListPart", new {page = x, articleId = Model.ArticleId}, new AjaxOptions
+            {
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "commentsList" + @Model.ArticleId,
+            HttpMethod = "GET"
+            }))
+        </div>
+    }
