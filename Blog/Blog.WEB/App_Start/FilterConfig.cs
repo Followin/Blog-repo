@@ -6,9 +6,11 @@ namespace Blog.WEB
 {
     public class FilterConfig
     {
-        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        public static void RegisterGlobalFilters(GlobalFilterCollection filter)
         {
-            filters.Add(new HandleErrorAttribute());
+            filter.Add(new HandleErrorAttribute());
+            
+
         }
     }
 }
