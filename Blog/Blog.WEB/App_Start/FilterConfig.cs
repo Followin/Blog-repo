@@ -9,6 +9,7 @@ namespace Blog.WEB
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            //Something here
         }
     }
 }
