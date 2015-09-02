@@ -7,8 +7,7 @@
 
 @section body
 {
-    Admin = @User.IsInRole("Admin")
-    @if (User.Identity.Name == "Admin") { <div>@Html.ActionLink("+", "Create", "Home", new { @class = "addArticleButton"})</div> }
+    @if (User.IsInRole("Admin")) { <div>@Html.ActionLink("+", "Create", "Home", new { @class = "addArticleButton"})</div> }
     <div id="articles">
         @Html.Partial("_articleList", Model)
     </div>

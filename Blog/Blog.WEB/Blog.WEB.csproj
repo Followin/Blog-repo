@@ -149,7 +149,7 @@
     <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
-    <Compile Include="Filters\CheckuserExistanceFilter.cs" />
+    <Compile Include="Filters\ProvideRolesFilter.cs" />
     <Compile Include="Filters\MyAuthorizeAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

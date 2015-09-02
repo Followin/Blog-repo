@@ -38,6 +38,8 @@ namespace Blog.WEB.Controllers
             return 0;
         }
 
+
+        
         public ActionResult Index(int? id)
         {
             var page = id ?? 0;

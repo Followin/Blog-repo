@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Principal;
 using System.Web;
+using System.Web.ClientServices;
 using System.Web.Mvc;
 using System.Web.Security;
 using Blog.BLL.Abstract;
@@ -14,38 +15,38 @@ namespace Blog.WEB.Filters
 {
 
     
-    public class CheckUserExistanceFilter : IActionFilter
+    public class ProvideRolesFilter : IAuthorizationFilter
     {
 
         private IAuthService _service;
 
-        public CheckUserExistanceFilter()
+        public ProvideRolesFilter()
         {
             _service = DependencyResolver.Current.GetService<IAuthService>();
         }
 
-        public void OnActionExecuting(ActionExecutingContext filterContext)
+        
+
+        public void OnAuthorization(AuthorizationContext filterContext)
         {
-            if (filterContext.HttpContext.User.Identity.IsAuthenticated)
+            var request = filterContext.RequestContext.HttpContext;
+
+            if (request.User.Identity.IsAuthenticated)
             {
-                var authCookie = filterContext.HttpContext.Request.Cookies[FormsAuthentication.FormsCookieName];
+                var authCookie = request.Request.Cookies[FormsAuthentication.FormsCookieName];
                 if (authCookie != null)
                 {
                     var ticket = FormsAuthentication.Decrypt(authCookie.Value);
                     var id = Convert.ToInt32(ticket.UserData);
                     var user = _service.GetUserInfo(id);
-                    if (user == null)
+                    var a = request.User.IsInRole("Admin");
+                    if (user != null)
                     {
-                        FormsAuthentication.SignOut();
-                        filterContext.HttpContext.User = new GenericPrincipal(new GenericIdentity(string.Empty), null);
+                        var identity = new GenericIdentity(ticket.Name);
+                        request.User = new GenericPrincipal(identity, new[] { user.Role.Name });
                     }
                 }
             }
-        }
-
-        public void OnActionExecuted(ActionExecutedContext filterContext)
-        {
-            
         }
     }
 }

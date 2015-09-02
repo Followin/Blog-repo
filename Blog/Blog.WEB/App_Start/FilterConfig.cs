@@ -9,7 +9,7 @@ namespace Blog.WEB
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
-            filters.Add(new CheckUserExistanceFilter());
+            //filters.Add(new ProvideRolesFilter());
         }
     }
 }

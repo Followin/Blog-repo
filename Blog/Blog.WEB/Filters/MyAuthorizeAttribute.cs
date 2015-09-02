@@ -18,27 +18,6 @@ namespace Blog.WEB.Filters
         [Inject]
         public IAuthService _service { get; set; }
 
-        
-
-        protected override bool AuthorizeCore(HttpContextBase httpContext)
-        {
-            if (httpContext.User.Identity.IsAuthenticated)
-            {
-                var authCookie = httpContext.Request.Cookies[FormsAuthentication.FormsCookieName];
-                if (authCookie != null)
-                {
-                    var ticket = FormsAuthentication.Decrypt(authCookie.Value);
-                    var id = Convert.ToInt32(ticket.UserData);
-                    var user = _service.GetUserInfo(id);
-                    if (user != null)
-                    {
-                        var identity = new GenericIdentity(ticket.Name);
-                        httpContext.User = new GenericPrincipal(identity, new[] { user.Role.Name });
-                    }
-                }
-            }
-            return base.AuthorizeCore(httpContext);
-        }
 
 
         protected override void HandleUnauthorizedRequest(AuthorizationContext context)
